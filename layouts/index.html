@@ -66,7 +66,10 @@
       {{ range $paginator.Pages }}
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="{{.Params.Image | absURL }}" alt="post-thumb">
+          <p></p><a href="http://{{.URL}}">
+            <img class="img-fluid mb-4" src="{{.Params.Image | absURL }}" alt="post-thumb">
+          </a></p>
+
           <p class="text-uppercase mb-2">{{range .Params.Categories}}{{. | humanize}}{{end}}</p>
           <!-- with line under title -->
           <!-- <h4 class="title-border"><a class="text-dark" href="{{.Permalink}}">{{.Title}}</a></h4> -->
