@@ -64,7 +64,7 @@
     {{ if eq site.Params.layout "1" }}
     <div class="row masonry-container">
       {{ range $paginator.Pages }}
-      <div class="col-lg-4 col-sm-6 mb-5">
+      <div class="col-lg-3 col-sm-6 mb-5">
         <article class="text-center">
           <p></p><a href="http://{{.URL}}">
             <img class="img-fluid mb-4" src="{{.Params.Image | absURL }}" alt="post-thumb">
@@ -74,8 +74,11 @@
           <!-- with line under title -->
           <!-- <h4 class="title-border"><a class="text-dark" href="{{.Permalink}}">{{.Title}}</a></h4> -->
 
-          <!-- without line under title -->
-          <h4><a class="text-dark" href="http://{{.URL}}">{{.Title}}</a></h4>
+          <!-- without line under title, link directly to their website -->
+          <!-- <h4><a class="text-dark" href="http://{{.URL}}">{{.Title}}</a></h4> -->
+
+          <!-- without line under title, link to a detailed page -->
+          <h4><a class="text-dark" href="{{.Permalink}}">{{.Title}}</a></h4>
 
           <!-- <p>{{.Summary}}</p> -->
           <!-- <a href="{{.Permalink}}" class="btn btn-transparent">read more</a> -->
