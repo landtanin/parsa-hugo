@@ -66,11 +66,11 @@
       {{ range $paginator.Pages }}
       <div class="col-lg-3 col-sm-6 mb-5">
         <article class="text-center">
-          <p></p><a href="http://{{.URL}}">
+          <p></p><a href="{{.Permalink}}">
             <img class="img-fluid mb-4" src="{{.Params.Image | absURL }}" alt="post-thumb">
           </a></p>
 
-          <p class="text-uppercase mb-2">{{range .Params.Categories}}{{. | humanize}}{{end}}</p>
+          <!-- <p class="text-uppercase mb-2">{{range .Params.Categories}}{{. | humanize}}{{end}}</p> -->
           <!-- with line under title -->
           <!-- <h4 class="title-border"><a class="text-dark" href="{{.Permalink}}">{{.Title}}</a></h4> -->
 
@@ -78,7 +78,7 @@
           <!-- <h4><a class="text-dark" href="http://{{.URL}}">{{.Title}}</a></h4> -->
 
           <!-- without line under title, link to a detailed page -->
-          <h4><a class="text-dark" href="{{.Permalink}}">{{.Title}}</a></h4>
+          <!-- <h4><a class="text-dark" href="{{.Permalink}}">{{.Title}}</a></h4> -->
 
           <!-- <p>{{.Summary}}</p> -->
           <!-- <a href="{{.Permalink}}" class="btn btn-transparent">read more</a> -->
