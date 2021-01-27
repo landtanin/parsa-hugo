@@ -284,6 +284,11 @@ a.text-dark:hover {
   padding-bottom: 80px;
 }
 
+.section-xsm {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .section-title {
   margin-bottom: 30px;
 }
@@ -813,6 +818,9 @@ blockquote {
 
 .content img{
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   height: auto;
 }
 
